@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Ali Azhar — Front-End Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Your Name, a Front-End Developer building modern, responsive and user-friendly websites with HTML, CSS, JavaScript, Bootstrap, jQuery, PHP and MySQL."
+    />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <!-- AOS-style scroll reveal (custom, no external dependency) -->
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============================= -->
+    <!-- NAVBAR                        -->
+    <!-- ============================= -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+        <!-- Logo / Name -->
+        <a class="navbar-brand" href="#home">
+          <span class="brand-bracket">&lt;</span>Ali<span class="brand-accent">Azhar</span
+          ><span class="brand-bracket">/&gt;</span>
+        </a>
+
+        <!-- Mobile hamburger -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Journey</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============================= -->
+    <!-- HERO                          -->
+    <!-- ============================= -->
+    <header class="hero" id="home">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Left: text -->
+          <div class="col-lg-7 order-2 order-lg-1">
+            <div class="hero-intro reveal">
+              <span class="hero-badge">
+                <span class="status-dot"></span> Available for opportunities
+              </span>
+            </div>
+
+            <h1 class="hero-title reveal" data-delay="100">
+              Hi, I'm a <span class="gradient-text">Front-End Developer</span>
+            </h1>
+
+            <p class="hero-subtitle reveal" data-delay="200">
+              I build modern, responsive and user-friendly websites using HTML,
+              CSS, JavaScript and modern web technologies.
+            </p>
+
+            <!-- Typing line -->
+            <div class="hero-typing reveal" data-delay="300">
+              <span class="typing-prompt">&gt;_ </span>
+              <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+            </div>
+
+            <!-- Buttons -->
+            <div class="hero-actions reveal" data-delay="400">
+              <a href="#projects" class="btn btn-primary-cta">
+                <i class="fa-solid fa-folder-open"></i> View My Work
+              </a>
+              <a href="./cv/CV.pdf" class="btn btn-outline-cta">
+                <i class="fa-solid fa-download"></i> Download CV
+              </a>
+            </div>
+
+            <!-- Social icons -->
+            <div class="hero-socials reveal" data-delay="500">
+              <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:your@email.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: profile visual -->
+          <div class="col-lg-5 order-1 order-lg-2">
+            <div class="hero-visual reveal" data-delay="300">
+              <div class="hero-orb"></div>
+              <div class="hero-ring hero-ring-1"></div>
+              <div class="hero-ring hero-ring-2"></div>
+              <div class="hero-ring hero-ring-3"></div>
+              <div class="hero-code-window">
+                <div class="code-window-bar">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <span class="code-file">developer.js</span>
+                </div>
+                <pre class="code-body"><code><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">'Ali Azhar'</span>,
+  <span class="c-prop">role</span>: <span class="c-str">'full stack Developer'</span>,
+  <span class="c-prop">skills</span>: [
+    <span class="c-str">'HTML5'</span>, <span class="c-str">'CSS3'</span>,
+    <span class="c-str">'JavaScript'</span>, <span class="c-str">'Bootstrap'</span>,
+    <span class="c-str">'jQuery'</span>, <span class="c-str">'PHP'</span>,
+    <span class="c-str">'MySQL'</span>
+  ],
+  <span class="c-prop">passion</span>: <span class="c-str">'Clean UI &amp; UX'</span>,
+  <span class="c-prop">available</span>: <span class="c-bool">true</span>
+};</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <span class="mouse"><span class="wheel"></span></span>
+      </a>
+    </header>
+
+    <!-- ============================= -->
+    <!-- ABOUT                         -->
+    <!-- ============================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">01. About Me</span>
+          <h2 class="section-title">Get to know me</h2>
+        </div>
+
+        <div class="row g-5 align-items-center">
+          <!-- Image card -->
+          <div class="col-lg-5">
+            <div class="about-card reveal">
+              <div class="about-img-wrap">
+                <img
+                  src="https://images.pexels.com/photos/6803522/pexels-photo-6803522.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                  alt="Developer working at desk"
+                  loading="lazy"
+                />
+                <div class="about-img-overlay"></div>
+              </div>
+              <div class="about-card-body">
+                <h3>Ali Azhar</h3>
+                <p>Front-End Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="col-lg-7">
+            <div class="about-text reveal" data-delay="150">
+              <h3>
+                Passionate about building
+                <span class="gradient-text">modern web experiences</span>
+              </h3>
+              <p>
+                I'm a junior front-end developer who loves turning ideas into
+                clean, responsive and user-friendly websites. My journey in web
+                development started with curiosity — how a few lines of HTML
+                and CSS could create something visible and interactive — and it
+                has grown into a real passion for crafting beautiful interfaces.
+              </p>
+              <p>
+                I focus on writing clean, semantic code and creating interfaces
+                that not only look good but also feel intuitive to use. I care
+                deeply about UI details, responsive design and giving visitors a
+                smooth experience on any device.
+              </p>
+              <p>
+                I'm continuously learning and improving — exploring
+                JavaScript, Bootstrap, jQuery and now backend tools like PHP and
+                MySQL to become a more complete developer. I'm looking for
+                internships, junior roles and freelance opportunities where I
+                can grow while contributing real value.
+              </p>
+
+              <div class="about-info">
+                <div class="info-item">
+                  <i class="fa-solid fa-user"></i>
+                  <span><strong>Name:</strong>  Ali Azhar</span>
+                </div>
+                <div class="info-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span><strong>Email:</strong> weakmen732@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span><strong>Location:</strong> Karachi, Pakistan</span>
+                </div>
+                <div class="info-item">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <span><strong>Status:</strong> Open to opportunities</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="row g-4 mt-2">
+          <div class="col-6 col-lg-3">
+            <div class="stat-card reveal">
+              <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+              <h3 class="counter" data-target="6">0</h3>
+              <p>Projects Completed</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card reveal" data-delay="100">
+              <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <h3 class="counter" data-target="7">0</h3>
+              <p>Technologies Learned</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card reveal" data-delay="200">
+              <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
+              <h3 class="counter" data-target="4">0</h3>
+              <p>Web Projects</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card reveal" data-delay="300">
+              <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h3 class="counter" data-target="12">0</h3>
+              <p>Months Learning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SKILLS                        -->
+    <!-- ============================= -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">02. Skills</span>
+          <h2 class="section-title">Technologies I work with</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Skill cards with progress bars -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card reveal">
+              <div class="skill-icon html-icon"><i class="fa-brands fa-html5"></i></div>
+              <h3>HTML5</h3>
+              <p>Create modern semantic website structures.</p>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="90"></div>
+                <span class="skill-pct">90%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card reveal" data-delay="80">
+              <div class="skill-icon css-icon"><i class="fa-brands fa-css3-alt"></i></div>
+              <h3>CSS3</h3>
+              <p>Create responsive layouts, animations, transitions and modern UI.</p>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="85"></div>
+                <span class="skill-pct">85%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card reveal" data-delay="160">
+              <div class="skill-icon js-icon"><i class="fa-brands fa-js"></i></div>
+              <h3>JavaScript</h3>
+              <p>Create interactive and dynamic website functionality.</p>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="75"></div>
+                <span class="skill-pct">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card reveal">
+              <div class="skill-icon bs-icon"><i class="fa-brands fa-bootstrap"></i></div>
+              <h3>Bootstrap</h3>
+              <p>Create responsive layouts and components efficiently.</p>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="80"></div>
+                <span class="skill-pct">80%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card reveal" data-delay="80">
+              <div class="skill-icon jq-icon"><i class="fa-solid fa-bolt"></i></div>
+              <h3>jQuery</h3>
+              <p>Use jQuery for DOM manipulation and interactive functionality.</p>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="70"></div>
+                <span class="skill-pct">70%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card reveal" data-delay="160">
+              <div class="skill-icon php-icon"><i class="fa-brands fa-php"></i></div>
+              <h3>PHP</h3>
+              <p>Use PHP for backend functionality and form/data processing.</p>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="65"></div>
+                <span class="skill-pct">65%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mx-auto">
+            <div class="skill-card reveal">
+              <div class="skill-icon sql-icon"><i class="fa-solid fa-database"></i></div>
+              <h3>MySQL</h3>
+              <p>Use MySQL for database management and CRUD operations.</p>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="60"></div>
+                <span class="skill-pct">60%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SERVICES                      -->
+    <!-- ============================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">03. Services</span>
+          <h2 class="section-title">What I can do for you</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card reveal">
+              <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3>Front-End Development</h3>
+              <p>
+                Modern and responsive websites using HTML5, CSS3 and JavaScript.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card reveal" data-delay="80">
+              <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <h3>Responsive Web Design</h3>
+              <p>
+                Websites that work properly on desktop, tablet and mobile.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card reveal" data-delay="160">
+              <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+              <h3>UI Development</h3>
+              <p>
+                Clean, modern and user-friendly website interfaces.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card reveal">
+              <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
+              <h3>Landing Pages</h3>
+              <p>
+                Professional landing pages for businesses and products.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card reveal" data-delay="80">
+              <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <h3>E-commerce Websites</h3>
+              <p>
+                Modern product/shop interfaces with responsive layouts.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card reveal" data-delay="160">
+              <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+              <h3>PHP &amp; MySQL Development</h3>
+              <p>
+                Basic backend functionality, forms, database integration and
+                CRUD systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- PROJECTS                      -->
+    <!-- ============================= -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">04. Projects</span>
+          <h2 class="section-title">My featured work</h2>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <!-- <button class="filter-btn" data-filter="front-end">Front-End</button> -->
+          <!-- <button class="filter-btn" data-filter="php">PHP</button> -->
+          <!-- <button class="filter-btn" data-filter="mysql">MySQL</button> -->
+          <!-- <button class="filter-btn" data-filter="ecommerce">E-commerce</button> -->
+        </div>
+
+        <div class="row g-4" id="projectsGrid">
+          <!-- Project 1 -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="front-end mountaineering">
+            <div class="project-card reveal">
+              <div class="project-img">
+                <img
+                  src="./images/mountaineering.jpg"
+                  alt="front-end mountaineering Website" loading="lazy"/>
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="#" target="_blank" rel="noopener" aria-label="Live Demo">
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="GitHub">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>front-end mountaineering Website</h3>
+                <p>A responsive e-commerce store with product listings, cart and checkout UI.</p>
+                <div class="project-tech">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap</span>
+                </div>
+                <div class="project-btns">
+                  <a href="#" target="_blank" rel="noopener" class="btn-demo">
+                    <i class="fa-solid fa-eye"></i> Live Demo
+                  </a>
+                  <a href="#" target="_blank" rel="noopener" class="btn-code">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- EDUCATION / LEARNING JOURNEY  -->
+    <!-- ============================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">05. Learning Journey</span>
+          <h2 class="section-title">My education path</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-flag"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Starting Point</span>
+              <h3>Web Development Learning</h3>
+              <p>
+                Began my journey into web development, learning how the web works
+                and setting up my first development environment.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-brands fa-html5"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Foundation</span>
+              <h3>HTML5 &amp; CSS3</h3>
+              <p>
+                Learned semantic HTML structure, CSS styling, Flexbox, Grid,
+                responsive design and modern UI techniques.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-brands fa-js"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Interactivity</span>
+              <h3>JavaScript</h3>
+              <p>
+                Studied JavaScript fundamentals, DOM manipulation, events, arrays,
+                objects and building interactive website features.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-brands fa-bootstrap"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Frameworks</span>
+              <h3>Bootstrap &amp; jQuery</h3>
+              <p>
+                Learned Bootstrap for rapid responsive layouts and jQuery for
+                simplified DOM manipulation and interactive functionality.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-brands fa-php"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Backend</span>
+              <h3>PHP &amp; MySQL</h3>
+              <p>
+                Explored server-side development with PHP and database management
+                with MySQL, building CRUD applications and form processing.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-rocket"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Practice</span>
+              <h3>Personal Projects</h3>
+              <p>
+                Applied everything I learned by building real projects —
+                e-commerce sites, CRUD systems, landing pages and this portfolio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- CONTACT                       -->
+    <!-- ============================= -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">06. Contact</span>
+          <h2 class="section-title">Let's work together</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Contact info cards -->
+          <div class="col-lg-5">
+            <div class="contact-info reveal">
+              <h3>Get in touch</h3>
+              <p>
+                I'm currently open to internships, junior developer roles and
+                freelance opportunities. Feel free to reach out — I'll get back
+                to you as soon as possible.
+              </p>
+
+              <div class="contact-cards">
+                <div class="contact-card">
+                  <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div>
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:your@email.com">weakmen732@gmail.com</a>
+                  </div>
+                </div>
+                <div class="contact-card">
+                  <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div>
+                    <span class="contact-label">Phone</span>
+                    <a href="tel:+920000000000">+92 3158902739</a>
+                  </div>
+                </div>
+                <div class="contact-card">
+                  <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div>
+                    <span class="contact-label">Location</span>
+                    <span>Karachi, Pakistan</span>
+                  </div>
+                </div>
+                <div class="contact-card">
+                  <div class="contact-card-icon"><i class="fa-brands fa-github"></i></div>
+                  <div>
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/aliazhar732</a>
+                  </div>
+                </div>
+                <div class="contact-card">
+                  <div class="contact-card-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                  <div>
+                    <span class="contact-label">LinkedIn</span>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener">www.linkedin.com/in/ali-azhar-0356b83b1</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <div class="col-lg-7">
+            <div class="contact-form-wrap reveal" data-delay="150">
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-field">
+                      <input type="text" id="name" name="name" placeholder=" " />
+                      <label for="name">Your Name</label>
+                      <span class="error-msg" id="nameError"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-field">
+                      <input type="email" id="email" name="email" placeholder=" " />
+                      <label for="email">Your Email</label>
+                      <span class="error-msg" id="emailError"></span>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-field">
+                      <input type="text" id="subject" name="subject" placeholder=" " />
+                      <label for="subject">Subject</label>
+                      <span class="error-msg" id="subjectError"></span>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-field">
+                      <textarea id="message" name="message" rows="5" placeholder=" "></textarea>
+                      <label for="message">Your Message</label>
+                      <span class="error-msg" id="messageError"></span>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary-cta w-100" id="submitBtn">
+                      <i class="fa-solid fa-paper-plane"></i> Send Message
+                    </button>
+                  </div>
+                </div>
+                <div class="form-success" id="formSuccess">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>Your message has been sent successfully! I'll get back to you soon.</p>
+                </div>
+                <div class="form-error-banner" id="formError">
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                  <p>Something went wrong. Please try again or email me directly.</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- FOOTER                        -->
+    <!-- ============================= -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <div class="footer-brand">
+              <span class="brand-bracket">&lt;</span>Ali<span class="brand-accent">Azhar</span
+              ><span class="brand-bracket">/&gt;</span>
+            </div>
+            <p class="footer-desc">
+              Front-End Developer passionate about building modern, responsive
+              and user-friendly websites. Open to internships, junior roles and
+              freelance opportunities.
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h4 class="footer-title">Follow Me</h4>
+            <div class="footer-socials">
+              <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:your@email.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
